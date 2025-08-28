@@ -1,0 +1,12 @@
+SI si ENTONCES entonces PARA para
+12345
+1.2
+++++++++++++++++ - * / % =
+, . ;
+( ) [ ] { }[][][][][][][][][][][][
+// hola como están
+/* hola, esto es un comentario
+de bloque
+*/
+Holaaa otras cosas 
+"Este es un comentario" 
