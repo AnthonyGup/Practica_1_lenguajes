@@ -16,7 +16,6 @@ public class PositionGenerator {
         int linea = 0;
 
         if (saltosDeLinea == null || saltosDeLinea.isEmpty()) {
-            // Si no hay saltos de línea, todo está en la primera línea
             return new Posicion(1, indice);
         }
 
@@ -30,6 +29,6 @@ public class PositionGenerator {
         }
 
         int columna = indice - saltosDeLinea.get(linea);
-        return new Posicion(linea + 1, columna); // Línea 1-based
+        return new Posicion(linea + 1, columna);
     }
 }
