@@ -20,6 +20,5 @@ public enum TipoToken {
         AGRUPACION,
         COMENTARIO_LINEA,
         COMENTARIO_BLOQUE,
-        ERROR;
-    
+        ERROR;    
 }

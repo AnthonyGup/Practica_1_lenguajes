@@ -13,22 +13,24 @@ import java.util.ArrayList;
 public class PositionGenerator {
 
     public Posicion calcularPosicion(int indice, ArrayList<Integer> saltosDeLinea) {
-        int linea = 0;
-
+        int linea = -1;
+        int columna = indice;
+        
         if (saltosDeLinea == null || saltosDeLinea.isEmpty()) {
-            return new Posicion(1, indice);
+            return new Posicion(0, indice);
         }
 
         // Buscar la última línea cuyo salto de línea está antes del índice
         for (int i = 0; i < saltosDeLinea.size(); i++) {
+            if (indice < saltosDeLinea.get(i)) {
+                break;
+            }
             if (indice > saltosDeLinea.get(i)) {
                 linea = i;
-            } else {
-                break;
+                columna = indice - saltosDeLinea.get(linea);
             }
         }
 
-        int columna = indice - saltosDeLinea.get(linea);
         return new Posicion(linea + 1, columna);
     }
 }
