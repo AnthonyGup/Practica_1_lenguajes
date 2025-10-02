@@ -1,5 +1,6 @@
 C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_lenguajes\src\main\java\com\mycompany\practica_1_lenguajes\backend\analyzer\LexicalAnalyzer.java
 C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_lenguajes\src\main\java\com\mycompany\practica_1_lenguajes\backend\analyzer\WordFinder.java
+C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_lenguajes\src\main\java\com\mycompany\practica_1_lenguajes\backend\automata\Automata.java
 C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_lenguajes\src\main\java\com\mycompany\practica_1_lenguajes\backend\FileHandler.java
 C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_lenguajes\src\main\java\com\mycompany\practica_1_lenguajes\backend\json\Config.java
 C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_lenguajes\src\main\java\com\mycompany\practica_1_lenguajes\backend\json\ConfigLoader.java
@@ -9,6 +10,7 @@ C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_le
 C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_lenguajes\src\main\java\com\mycompany\practica_1_lenguajes\backend\tokens\TipoToken.java
 C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_lenguajes\src\main\java\com\mycompany\practica_1_lenguajes\backend\tokens\Token.java
 C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_lenguajes\src\main\java\com\mycompany\practica_1_lenguajes\frontend\Analizador.java
+C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_lenguajes\src\main\java\com\mycompany\practica_1_lenguajes\frontend\AutomataFrontend.java
 C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_lenguajes\src\main\java\com\mycompany\practica_1_lenguajes\frontend\Loby.java
 C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_lenguajes\src\main\java\com\mycompany\practica_1_lenguajes\frontend\MainFrame.java
 C:\Users\antho\Documents\NetBeansProjects\Git\Practica_1_lenguajes\Practica_1_lenguajes\src\main\java\com\mycompany\practica_1_lenguajes\frontend\Reportes.java

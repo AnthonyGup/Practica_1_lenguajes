@@ -22,6 +22,11 @@ public class Token {
         this.posicion = posicion;
     }
 
+    public Token(String lexema, TipoToken tipo) {
+        this.tipo = tipo;
+        this.lexema = lexema;
+    }
+    
     public TipoToken getTipo() {
         return tipo;
     }

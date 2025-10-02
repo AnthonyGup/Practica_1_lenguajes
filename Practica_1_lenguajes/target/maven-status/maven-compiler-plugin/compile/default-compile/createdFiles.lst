@@ -1,6 +1,8 @@
 com\mycompany\practica_1_lenguajes\frontend\Analizador.class
+com\mycompany\practica_1_lenguajes\backend\automata\Automata.class
 com\mycompany\practica_1_lenguajes\frontend\Loby$5.class
 com\mycompany\practica_1_lenguajes\frontend\Analizador$7.class
+com\mycompany\practica_1_lenguajes\frontend\AutomataFrontend.class
 com\mycompany\practica_1_lenguajes\backend\json\Config.class
 com\mycompany\practica_1_lenguajes\backend\json\ConfigLoader.class
 com\mycompany\practica_1_lenguajes\backend\tokens\Posicion.class
@@ -9,6 +11,7 @@ com\mycompany\practica_1_lenguajes\frontend\MainFrame.class
 com\mycompany\practica_1_lenguajes\Practica_1_lenguajes.class
 com\mycompany\practica_1_lenguajes\backend\analyzer\WordFinder.class
 com\mycompany\practica_1_lenguajes\frontend\MainFrame$1.class
+com\mycompany\practica_1_lenguajes\frontend\AutomataFrontend$2.class
 com\mycompany\practica_1_lenguajes\frontend\Analizador$6.class
 com\mycompany\practica_1_lenguajes\frontend\Reportes.class
 com\mycompany\practica_1_lenguajes\backend\FileHandler.class
@@ -25,6 +28,8 @@ com\mycompany\practica_1_lenguajes\frontend\Loby$8.class
 com\mycompany\practica_1_lenguajes\frontend\Analizador$8.class
 com\mycompany\practica_1_lenguajes\frontend\Loby$4.class
 com\mycompany\practica_1_lenguajes\reportes\ReportesManager.class
+com\mycompany\practica_1_lenguajes\frontend\AutomataFrontend$1.class
+com\mycompany\practica_1_lenguajes\frontend\MainFrame$2.class
 com\mycompany\practica_1_lenguajes\frontend\Loby$3.class
 com\mycompany\practica_1_lenguajes\frontend\Analizador$5.class
 com\mycompany\practica_1_lenguajes\backend\tokens\TipoToken.class
@@ -33,3 +38,4 @@ com\mycompany\practica_1_lenguajes\backend\TextPainter.class
 com\mycompany\practica_1_lenguajes\reportes\ReportesExporter.class
 com\mycompany\practica_1_lenguajes\frontend\Analizador$2.class
 com\mycompany\practica_1_lenguajes\frontend\Loby$6.class
+com\mycompany\practica_1_lenguajes\frontend\AutomataFrontend$3.class
