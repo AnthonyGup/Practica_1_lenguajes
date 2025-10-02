@@ -5,6 +5,7 @@
 package com.mycompany.practica_1_lenguajes.backend.automata;
 
 import com.mycompany.practica_1_lenguajes.backend.TextPainter;
+import com.mycompany.practica_1_lenguajes.backend.afd.Transicion;
 import com.mycompany.practica_1_lenguajes.backend.tokens.Posicion;
 import com.mycompany.practica_1_lenguajes.backend.tokens.PositionGenerator;
 import com.mycompany.practica_1_lenguajes.backend.tokens.TipoToken;
@@ -21,7 +22,7 @@ public class Automata {
 
     // x = estados y = simbolos
     private final int[][] transiciones = new int[10][8];
-
+    private ArrayList<Transicion> grafo = new ArrayList<>();
     private final javax.swing.JTextPane pane;
     private final StyledDocument doc;
     private int estadoActual = 0;
@@ -138,6 +139,9 @@ public class Automata {
     }
 
     public void Analizar(String archivo) throws BadLocationException {
+        tokens = new ArrayList<>();
+        grafo.clear(); //limpia el arreglo del grafo
+        
         //Normaliza el texto, pasa los saltos de linea de windows a los otros
         String texto = archivo.replace("\r\n", "\n");
 
@@ -161,6 +165,7 @@ public class Automata {
                     if (estadoActual == 8) {
                         estadoAnterior = estadoActual;
                         estadoActual = transiciones[estadoActual][tipo];
+                        grafo.add(new Transicion("q" + estadoAnterior, "q" + estadoActual, c));
                     } else {
                         doc.insertString(doc.getLength(), "ES UN ESPACIO HAY QUE REINICIAR EL AUTOMATA\n", null);
                         reiniciarAutomata(lexema,i - lexema.length(), generadorPosicion.calcularPosicion(i - lexema.length(), splits));
@@ -181,6 +186,7 @@ public class Automata {
                         reiniciarAutomata(lexema, i - lexema.length() , generadorPosicion.calcularPosicion(i - lexema.length(), splits));
                         lexema = "";
                     } else {
+                        grafo.add(new Transicion("q" + estadoAnterior, "q" + estadoActual, c));
                         doc.insertString(doc.getLength(), "me movi del estado: " + estadoAnterior + " al estado: " + estadoActual + " con un: " + c + "\n", null);
                     }
                 }
@@ -190,7 +196,6 @@ public class Automata {
         
         reiniciarAutomata(lexema, indice - lexema.length(), generadorPosicion.calcularPosicion(indice - lexema.length(), splits));
         ImprimirTokens();
-        tokens = new ArrayList<>();
     }
 
     private ArrayList<Integer> evaluarSplits(String texto) {
@@ -302,5 +307,13 @@ public class Automata {
             return 7;
         }
         return valor;
+    }
+    
+    public ArrayList<Transicion> getGrafo() {
+        return grafo;
+    }
+    
+    public ArrayList<Token> getTOKENS() {
+        return tokens;
     }
 }

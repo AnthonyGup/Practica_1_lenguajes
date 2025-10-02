@@ -9,5 +9,14 @@ package com.mycompany.practica_1_lenguajes.backend.afd;
  * @author antho
  */
 public class Transicion {
-    
+    public final String origen;
+    public final String destino;
+    public final char simbolo;
+
+    public Transicion(String origen, String destino, char simbolo) {
+        this.origen = origen;
+        this.destino = destino;
+        this.simbolo = simbolo;
+    }
+
 }
